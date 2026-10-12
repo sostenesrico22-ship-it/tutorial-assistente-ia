@@ -29,13 +29,21 @@ small{color:#999}
 <div class="step"><div class="n">2</div>Envie o comprovante no WhatsApp</div>
 <div class="step"><div class="n">3</div>Receba o link do tutorial</div></div>
 <div class="card"><div class="price" id="preco"></div>
-<p style="text-align:center;margin:4px 0">Chave Pix (telefone)</p>
-<div class="pix">73981024409</div><p style="text-align:center"><small>Recebedor: Sóstenes Silva</small></p>
-<button class="btn b1" onclick="copiar()" id="cp">📋 Copiar chave Pix</button>
+<p style="text-align:center;margin:4px 0"><b>Pix copia e cola</b></p>
+<div style="text-align:center"><img src="pix-qr.png" alt="QR Code Pix" style="width:220px;max-width:80%;background:#fff;border-radius:10px;padding:6px"></div>
+<p style="text-align:center;margin:4px 0"><small>Escaneie o QR Code no app do banco ou copie o código abaixo</small></p>
+<div class="pix" style="font-size:.75em;letter-spacing:0;word-break:break-all;user-select:all">00020101021126720014br.gov.bcb.pix0136abfd76c7-9886-4b92-8e7d-5cc9018708ec0210IA Conect 520400005303986540530.005802BR5923Sostenes Teixeira Morei6009SAO PAULO61080131010062120508IAConect6304837F</div>
+<button class="btn b1" onclick="copiar(this,PIXCODE,'📋 Copiar código Pix')">📋 Copiar código Pix</button>
+<p style="text-align:center;margin:10px 0 4px">Ou use a chave Pix aleatória:</p>
+<div class="pix" style="font-size:.85em;letter-spacing:0;word-break:break-all">abfd76c7-9886-4b92-8e7d-5cc9018708ec</div>
+<button class="btn b1" onclick="copiar(this,PIXKEY,'📋 Copiar chave aleatória')">📋 Copiar chave aleatória</button>
+<p style="text-align:center"><small>Recebedor: Sóstenes Teixeira</small></p>
 <a class="btn b2" href="https://wa.me/5573981024409?text=Ol%C3%A1!%20Fiz%20o%20Pix%20do%20tutorial%20do%20Grok%20Bot%2C%20segue%20o%20comprovante.">💬 Enviar comprovante no WhatsApp</a></div>
 <p><small>Este é um tutorial independente, feito por Sóstenes Silva. Não é um produto oficial nem afiliado à xAI/Grok. O app Grok Bot é de terceiros e pode ter seus próprios custos e condições.</small></p>
 </div><script>
 document.getElementById('preco').textContent=PRECO;
-function copiar(){const k='73981024409',b=document.getElementById('cp');const ok=()=>{b.textContent='✅ Chave copiada!';setTimeout(()=>b.textContent='📋 Copiar chave Pix',2500)};
-if(navigator.clipboard)navigator.clipboard.writeText(k).then(ok,f);else f();function f(){const t=document.createElement('textarea');t.value=k;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();ok()}}
+const PIXCODE='00020101021126720014br.gov.bcb.pix0136abfd76c7-9886-4b92-8e7d-5cc9018708ec0210IA Conect 520400005303986540530.005802BR5923Sostenes Teixeira Morei6009SAO PAULO61080131010062120508IAConect6304837F',PIXKEY='abfd76c7-9886-4b92-8e7d-5cc9018708ec';
+function copiar(b,k,lbl){const ok=()=>{b.textContent='✅ Copiado!';setTimeout(()=>b.textContent=lbl,2500)};
+function f(){const t=document.createElement('textarea');t.value=k;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();ok()}
+if(navigator.clipboard)navigator.clipboard.writeText(k).then(ok,f);else f()}
 </script></body></html>
