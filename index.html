@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Assistente de IA para o seu Instagram – Tutorial</title>
+<script>const PRECO = "R$ 30,00";</script>
+<style>
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0f0f17;color:#eee;line-height:1.5}
+.w{max-width:480px;margin:auto;padding:22px}
+h1{font-size:1.7em;line-height:1.2;margin:.3em 0;background:linear-gradient(90deg,#f9ce34,#ee2a7b,#6228d7);-webkit-background-clip:text;color:transparent}
+.tag{display:inline-block;background:#222;border-radius:20px;padding:4px 12px;font-size:.8em;color:#aaa}
+.card{background:#1a1a26;border-radius:16px;padding:16px;margin:14px 0}
+ul{padding-left:0;list-style:none}li{margin:8px 0}
+.step{display:flex;gap:12px;align-items:center;margin:10px 0}.n{flex:none;width:34px;height:34px;border-radius:50%;background:#ee2a7b;display:grid;place-items:center;font-weight:700}
+.price{font-size:2em;font-weight:800;color:#f9ce34;text-align:center}
+.pix{background:#0f0f17;border:1px dashed #555;border-radius:10px;padding:10px;text-align:center;font-size:1.3em;letter-spacing:1px}
+.btn{display:block;width:100%;box-sizing:border-box;text-align:center;padding:15px;border-radius:12px;border:0;font-size:1.05em;font-weight:700;margin-top:10px;text-decoration:none;cursor:pointer}
+.b1{background:#32bcad;color:#fff}.b2{background:#25d366;color:#fff}
+small{color:#999}
+</style></head><body><div class="w">
+<span class="tag">Tutorial independente • passo a passo</span>
+<h1>Tenha um assistente de IA cuidando do seu Instagram</h1>
+<p>Aprenda a configurar o <b>Grok Bot</b>, um app de assistente de IA, para trabalhar no seu perfil — e você continua no controle de tudo.</p>
+<div class="card"><b>O que o assistente faz por você:</b><ul>
+<li>✨ Deixa seu perfil com cara profissional (bio, organização)</li>
+<li>🎨 Cria postagens profissionais</li>
+<li>💡 Dá dicas certas para crescer</li>
+<li>✅ <b>Mostra cada postagem para você aprovar</b> antes de publicar</li>
+<li>⏰ Agenda postagens todos os dias, no horário que você escolher</li></ul></div>
+<div class="card"><b>Como funciona:</b>
+<div class="step"><div class="n">1</div>Pague via Pix</div>
+<div class="step"><div class="n">2</div>Envie o comprovante no WhatsApp</div>
+<div class="step"><div class="n">3</div>Receba o link do tutorial</div></div>
+<div class="card"><div class="price" id="preco"></div>
+<p style="text-align:center;margin:4px 0">Chave Pix (telefone)</p>
+<div class="pix">73981024409</div><p style="text-align:center"><small>Recebedor: Sóstenes Silva</small></p>
+<button class="btn b1" onclick="copiar()" id="cp">📋 Copiar chave Pix</button>
+<a class="btn b2" href="https://wa.me/5573981024409?text=Ol%C3%A1!%20Fiz%20o%20Pix%20do%20tutorial%20do%20Grok%20Bot%2C%20segue%20o%20comprovante.">💬 Enviar comprovante no WhatsApp</a></div>
+<p><small>Este é um tutorial independente, feito por Sóstenes Silva. Não é um produto oficial nem afiliado à xAI/Grok. O app Grok Bot é de terceiros e pode ter seus próprios custos e condições.</small></p>
+</div><script>
+document.getElementById('preco').textContent=PRECO;
+function copiar(){const k='73981024409',b=document.getElementById('cp');const ok=()=>{b.textContent='✅ Chave copiada!';setTimeout(()=>b.textContent='📋 Copiar chave Pix',2500)};
+if(navigator.clipboard)navigator.clipboard.writeText(k).then(ok,f);else f();function f(){const t=document.createElement('textarea');t.value=k;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();ok()}}
+</script></body></html>
